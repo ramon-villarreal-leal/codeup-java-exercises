@@ -88,62 +88,62 @@ public class ControlFlowExercises {
 
         Scanner sc = new Scanner(System.in);
 //
-//        System.out.print("What number would you like to go up too?: ");
-//        int userInput = sc.nextInt();
-//
-//        System.out.print("Continue? [y/N]");
-//        String userAnswer = sc.next();
-//        boolean saidYes = userAnswer.equalsIgnoreCase("y");
-//        if(saidYes) {
-//            System.out.println("\nHere is your table! \n");
-//            System.out.println("number | squared | cubed");
-//            System.out.println("------ | ------- | -----");
-//
-//
-//
-//            for(int i = 1; i <= userInput; i += 1) {
-////                String output = String.format("%-7d| %-8d| %-7d", i, i*i, i*i*i); // string formatted like this anywhere it goes
-////                System.out.println(output);
-//                System.out.printf("%-7d|%-8d |%-6d \n", i, i*i, i*i*i);
-////                String.format(output); //useful later on
-//            }
-//
-//        } else {
-//            System.out.println("Terminated");
-//        }
+        System.out.print("What number would you like to go up too?: ");
+        int userInput = sc.nextInt();
+
+        System.out.print("Continue? [y/N]");
+        String userAnswer = sc.next();
+        boolean saidYes = userAnswer.equalsIgnoreCase("y");
+        if(saidYes) {
+            System.out.println("\nHere is your table! \n");
+            System.out.println("number | squared | cubed");
+            System.out.println("------ | ------- | -----");
+
+
+
+            for(int i = 1; i <= userInput; i += 1) {
+//                String output = String.format("%-7d| %-8d| %-7d", i, i*i, i*i*i); // string formatted like this anywhere it goes
+//                System.out.println(output);
+                System.out.printf("%-7d|%-8d |%-6d \n", i, i*i, i*i*i);
+//                String.format(output); //useful later on
+            }
+
+        } else {
+            System.out.println("Terminated");
+        }
 
 
         //grades displaying:
-        System.out.print("Would you like to enter a grade?");
-        int userGradeInput = sc.nextInt();
-
-        System.out.print("Continue to see your grade? [y/n]");
-        String userAnswer = sc.next();
-        boolean yesSeeGrades = userAnswer.equalsIgnoreCase("y");
-        if (yesSeeGrades) {
-            if (userGradeInput >= 95) {
-                System.out.println("A+");
-            } else if (userGradeInput >= 90) {
-                System.out.println("A-");
-            } else if (userGradeInput >= 85) {
-                System.out.println("B+");
-            } else if (userGradeInput >= 80) {
-                System.out.println("B-");
-            } else if (userGradeInput >= 75) {
-                System.out.println("C+");
-            } else if (userGradeInput >= 70) {
-                System.out.println("C-");
-            } else if (userGradeInput >= 60) {
-                System.out.println("D");
-            } else {
-                System.out.println("F");
-            }
-
-            System.out.printf("Your grade is: %s ", userGradeInput);
-
-        } else {
-            System.out.println("Looks like you won't see your grade.");
-        }
+//        System.out.print("Would you like to enter a grade?");
+//        int userGradeInput = sc.nextInt();
+//
+//        System.out.print("Continue to see your grade? [y/n]");
+//        String userAnswer = sc.next();
+//        boolean yesSeeGrades = userAnswer.equalsIgnoreCase("y");
+//        if (yesSeeGrades) {
+//            if (userGradeInput >= 95) {
+//                System.out.println("A+");
+//            } else if (userGradeInput >= 90) {
+//                System.out.println("A-");
+//            } else if (userGradeInput >= 85) {
+//                System.out.println("B+");
+//            } else if (userGradeInput >= 80) {
+//                System.out.println("B-");
+//            } else if (userGradeInput >= 75) {
+//                System.out.println("C+");
+//            } else if (userGradeInput >= 70) {
+//                System.out.println("C-");
+//            } else if (userGradeInput >= 60) {
+//                System.out.println("D");
+//            } else {
+//                System.out.println("F");
+//            }
+//
+//            System.out.printf("Your grade is: %s ", userGradeInput);
+//
+//        } else {
+//            System.out.println("Looks like you won't see your grade.");
+//        }
 
 
     }
