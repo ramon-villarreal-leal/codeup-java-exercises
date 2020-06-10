@@ -1,3 +1,4 @@
+import jdk.swing.interop.SwingInterOpUtils;
 import org.w3c.dom.ls.LSOutput;
 
 import java.util.Scanner;
@@ -24,7 +25,7 @@ public class MethodsExercises {
 
 //        exercise 3 factorial
 
-        System.out.println(factorial(1, 10));
+//        System.out.println(factorial(1, 10));
 
         //exercise 4
 
@@ -80,33 +81,33 @@ public class MethodsExercises {
 
     }
 
-
-    public static long factorial(int mini, int maxi) {
-        Scanner sc = new Scanner(System.in);
-        System.out.printf("Enter a number between %d and %d \n", mini, maxi);
-
-        int userFactorInput = sc.nextInt();
-        System.out.println("Continue to see your factorial number? [y/N]");
-        String userAnswer = sc.next();
-        boolean seeFactorial = userAnswer.equalsIgnoreCase("y");
-        long fact = 1;
-
-        if (seeFactorial) {
-            if (userFactorInput >= mini && userFactorInput <= maxi) {
-
-                for (long i = 1; i <= userFactorInput; i++) {
-                    fact = fact * i;
-                    System.out.println(i +"! = " + fact + " x " + i + " x " + i);
-                }
-            } else {
-                System.out.println(factorial(mini, maxi));
-            }
-
-        }
-
-        return fact;
-
-    }
+//exercise 3
+//    public static long factorial(int mini, int maxi) {
+//        Scanner sc = new Scanner(System.in);
+//        System.out.printf("Enter a number between %d and %d \n", mini, maxi);
+//
+//        int userFactorInput = sc.nextInt();
+//        System.out.println("Continue to see your factorial number? [y/N]");
+//        String userAnswer = sc.next();
+//        boolean seeFactorial = userAnswer.equalsIgnoreCase("y");
+//        long fact = 1;
+//
+//        if (seeFactorial) {
+//            if (userFactorInput >= mini && userFactorInput <= maxi) {
+//
+//                for (long i = 1; i <= userFactorInput; i++) {
+//                    fact = fact * i;
+//                    System.out.println(i +"! = " + fact + " x " + i + " x " + i);
+//                }
+//            } else {
+//                System.out.println(factorial(mini, maxi));
+//            }
+//
+//        }
+//
+//        return fact;
+//
+//    }
 
 //    public static long factorialWithForLoop(int mini, int maxi) {
 //        Scanner sc = new Scanner(System.in);
@@ -147,6 +148,5 @@ public class MethodsExercises {
             } while (answer.equalsIgnoreCase("y"));
         }
     }
-
 
 }
