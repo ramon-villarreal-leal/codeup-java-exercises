@@ -2,10 +2,24 @@ package oopLecture;
 
 public class Person {
 
+    public Person(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
 //        // SLIDE 3
-//        public String firstName;
-//        public String lastName;
-//        public int age = -1;
+        private String firstName;
+        private String lastName;
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    //        public int age = -1;
 //        public char character;
 //        boolean isEmployed;
 
@@ -33,9 +47,9 @@ public class Person {
 //        public String lastName;
 //
 //        // instance method
-//        public String sayHello() {
-//                return lastName + ", " + firstName + " says hi!";
-//        }
+        public String sayHello() {
+                return lastName + ", " + firstName + " says hi!";
+        }
 //
 
     // SLIDE 7
@@ -49,7 +63,7 @@ public class Person {
                 System.out.println(worldPopulation);
 
 
-                Person theBestDrummerAlive = new Person();
+                Person theBestDrummerAlive = new Person("1", "2");
                 theBestDrummerAlive.name = "Neil Peart";
                 Person.worldPopulation += 1; // accessing a static property
                 // this also works, but is usually not a good idea

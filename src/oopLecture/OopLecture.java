@@ -74,7 +74,7 @@ public class OopLecture {
 
         // ======================== slide 7 (class vs. object fields)
 
-            Person theBestDrummerAlive = new Person();
+            Person theBestDrummerAlive = new Person("1","2");
             theBestDrummerAlive.name = "Neil Peart";
             Person.worldPopulation += 1; // accessing a static property
 
@@ -83,7 +83,7 @@ public class OopLecture {
             // this also works, but is usually not a good idea
             System.out.println(theBestDrummerAlive.worldPopulation); // 7500000001
             System.out.println(theBestDrummerAlive.name);
-        Person person = new Person();
+        Person person = new Person("1", "2");
         person.name = "John Smith";
 //
 //        Post post = new Post();
