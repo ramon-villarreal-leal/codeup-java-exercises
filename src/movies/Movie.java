@@ -2,7 +2,8 @@ package movies;
 
 public class Movie {
 
-    //making an instance of name and movies
+
+    //making an instance of name and category
     private String name;
     private String category;
 
@@ -16,19 +17,24 @@ public class Movie {
         this.name = name;
     }
 
-    //getter for movies
+    //getter for category
     public String getCategory(){
         return this.category;
     }
 
-    //setter for movies
+    //setter for category
     public void setCategory(String category) {
         this.category = category;
     }
 
     //constructor that sets both of names/categories
     public Movie(String name, String category) {
-        System.out.println(name + " -- " + category);
+        this.name = name;
+        this.category = category;
+    }
+
+    public String movieFormat(){
+        return name + " -- " + category;
     }
 
 

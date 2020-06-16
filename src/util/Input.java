@@ -35,7 +35,7 @@ public class Input {
 
 
     public int getInt() {
-        System.out.println("Enter a valid number");
+//        System.out.println("Enter a valid number");
         if(scanner.hasNextInt()) {
             return scanner.nextInt();
         } else {
