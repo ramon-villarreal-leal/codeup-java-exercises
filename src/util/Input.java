@@ -11,14 +11,19 @@ public class Input {
     }
 
     public String getString() {
-        System.out.println("What is your way of saying yes?");
         return scanner.nextLine();
 
     }
 
 
+    public String getString(String prompt) {
+        System.out.println(prompt);
+        return scanner.nextLine();
+    }
+
+
     public boolean yesNo() {
-        System.out.println("Different ways to say yes");
+//        System.out.println("Different ways to say yes");
         String answer = getString();
         if (answer.equalsIgnoreCase("yes")
                 ||answer.equalsIgnoreCase("y")||answer.equalsIgnoreCase("yee")) {
@@ -35,15 +40,13 @@ public class Input {
 
 
     public int getInt() {
-//        System.out.println("Enter a valid number");
-        if(scanner.hasNextInt()) {
-            return scanner.nextInt();
-        } else {
-            System.out.println("invalid input, enter valid integer");
-            scanner.next();
-            return getInt();
+        String userInput = scanner.nextLine();
+        try{
+            return Integer.parseInt(userInput);
+        }catch(NumberFormatException e) {
+            System.out.println("Need a valid integer.");
+             return getInt();
         }
-//        return scanner.nextInt(); // this works also OLD WAY no prompting user
     }
 
     public int getInt(int min, int max) {
@@ -60,7 +63,13 @@ public class Input {
     }
 
     public double getDouble() {
-        return scanner.nextDouble();
+        String userInput = scanner.nextLine();
+        try{
+            return Double.parseDouble(userInput);
+        }catch(NumberFormatException e){ //checked exception most general
+            System.out.println("enter a valid double number");
+            return getDouble();
+        }
     }
 //
     public double getDouble(double min, double max){
@@ -69,6 +78,7 @@ public class Input {
         if(floatAnswer >= min && floatAnswer <= max) {
             return floatAnswer;
         } else {
+            System.out.println("Please enter a number in the correct range between " + min + " " + "and " + max);
             return getDouble(min,max);
         }
     }

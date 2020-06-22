@@ -1,4 +1,8 @@
 package abstractLecture.deliveryTruck;
 
-public class Truck {
+abstract class Truck {
+    int size;
+    int numberOfWheels;
+    int truckId;
+
 }

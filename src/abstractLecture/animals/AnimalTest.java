@@ -1,4 +1,4 @@
-package abstractLecture;
+package abstractLecture.animals;
 
 public class AnimalTest {
 

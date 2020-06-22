@@ -1,7 +1,7 @@
 package collectionsLecture;
 import java.util.*;
 
-public class CollectionsLecture {
+public class ArrayListLecture {
     public static void main(String[] args) {
         // Creating ArrayList
 

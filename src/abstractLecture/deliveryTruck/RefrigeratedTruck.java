@@ -1,4 +1,7 @@
 package abstractLecture.deliveryTruck;
 
-public class RefrigeratedTruck {
+abstract class RefrigeratedTruck extends Truck {
+
+
+    public abstract void coolTime();
 }

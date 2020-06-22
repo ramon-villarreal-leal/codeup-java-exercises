@@ -10,7 +10,7 @@ public class Circle {
     }
 
     public double getArea() {
-        return Math.PI * (radius*radius); //Math.pow(radius,2) justins way BEST WAY
+        return Math.PI * Math.pow(radius,2); //Math.pow(radius,2) justins way BEST WAY
     }
 
     public double getCircumference(){
