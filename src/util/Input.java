@@ -71,7 +71,7 @@ public class Input {
             return getDouble();
         }
     }
-//
+
     public double getDouble(double min, double max){
         System.out.printf("Enter a decimal between %.4f - %.4f%n", min, max);
         double floatAnswer = getDouble();
